@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description"
+        content="Cafetería Nanay en Tamaraceite, Las Palmas. Disfruta del mejor café de especialidad, desayunos artesanales y un ambiente acogedor. Visítanos en C. Cruz del Ovejero." />
+    <meta name="keywords"
+        content="cafetería Tamaraceite, cafetería Las Palmas, café de especialidad Tamaraceite, desayunos Las Palmas, Cafetería Nanay, café artesanal" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://www.cafeteriananay.com/" />
+    
+    <!-- Open Graph (Facebook/WhatsApp) -->
+    <meta property="og:title" content="Cafetería Nanay | Tamaraceite, Las Palmas" />
+    <meta property="og:description"
+        content="El mejor café de especialidad y ambiente acogedor en Tamaraceite. ¡Ven a descubrir Cafetería Nanay!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.cafeteriananay.com/" />
+    <meta property="og:image" content="https://www.cafeteriananay.com/assets/images/portada.webp" />
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cafetería Nanay | Tamaraceite">
+    <meta name="twitter:description" content="Café de especialidad en Tamaraceite, Las Palmas.">
+    <meta name="twitter:image" content="https://www.cafeteriananay.com/assets/images/portada.webp">
+    
+    <title>Cafetería Nanay | Tamaraceite, Las Palmas</title>
+
+    <link rel="preconnect" href="https://lh3.googleusercontent.com" crossorigin />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@300;400;500&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#3E210B",
+                        "on-primary": "#F8F6ED",
+                        "primary-container": "#F2C98D",
+                        "on-primary-container": "#3E210B",
+                        "secondary": "#73ADB7",
+                        "on-secondary": "#ffffff",
+                        "surface": "#F8F6ED",
+                        "background": "#F8F6ED",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#e8e5d8",
+                        "on-surface": "#303513",
+                        "on-surface-variant": "#4a521e",
+                        "outline": "#73ADB7",
+                        "outline-variant": "#c9c5b5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "5rem",
+                        "margin": "max(5vw, 40px)",
+                        "md": "1.5rem",
+                        "base": "8px",
+                        "sm": "1rem",
+                        "gutter": "24px",
+                        "lg": "3rem",
+                        "xs": "0.5rem"
+                    },
+                    "fontFamily": {
+                        "headline-h2": ["Plus Jakarta Sans"],
+                        "body-md": ["Manrope"],
+                        "display": ["Plus Jakarta Sans"],
+                        "label-caps": ["Manrope"],
+                        "headline-h3": ["Plus Jakarta Sans"],
+                        "headline-h1": ["Plus Jakarta Sans"],
+                        "body-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-h2": ["32px", { "lineHeight": "1.3", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "300" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-h3": ["24px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "headline-h1": ["48px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body
+    class="bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+    <!-- Header (transparente sobre hero, sólido al hacer scroll) -->
+    <header id="site-header" class="fixed top-0 left-0 right-0 z-50 header-over-hero transition-all duration-500">
+        <div class="flex justify-between items-center w-full px-margin py-sm max-w-7xl mx-auto">
+            <div class="flex items-center lg:-ml-12 w-[100px] md:w-[150px]">
+                <!-- Hamburger Button (Mobile Only) -->
+                <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-start w-10 h-10 border-none bg-transparent cursor-pointer" aria-label="Abrir menú">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary, #3E210B)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <nav class="hidden md:flex items-center gap-gutter" aria-label="Navegación principal">
+                <a class="nav-link font-body-md transition-colors duration-500 hover:opacity-100 pb-1"
+                    href="#esencia">Sobre Nosotros</a>
+                <a class="nav-link font-body-md transition-colors duration-500 hover:opacity-100" href="#menu">Menú</a>
+
+                <a class="nav-link font-body-md transition-colors duration-500 hover:opacity-100"
+                    href="#contacto-social">Contacto</a>
+            </nav>
+            <a href="#ubicacion"
+                class="cta-btn px-lg py-sm rounded-full font-label-caps text-label-caps uppercase tracking-widest transition-all duration-300 inline-flex items-center justify-center bg-primary-container text-on-surface border-none">
+                Visítanos
+            </a>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section — Pantalla completa con imagen de fondo -->
+        <section class="hero-section" aria-label="Portada principal">
+
+            <!-- Imagen de fondo con zoom suave de entrada -->
+            <img class="hero-bg" src="assets/images/portada.webp"
+                alt="Café de especialidad en Cafetería Nanay, Tamaraceite, Las Palmas"
+                fetchpriority="high" decoding="async" />
+
+            <!-- Overlay degradado para legibilidad del texto -->
+            <div class="hero-overlay" aria-hidden="true"></div>
+
+            <!-- Contenido textual animado -->
+            <div class="hero-content w-full max-w-4xl px-4 flex justify-center">
+                <img src="assets/images/logo.webp" alt="Logo de Cafetería Nanay en Tamaraceite" class="w-full max-w-[600px] drop-shadow-2xl" loading="lazy">
+            </div>
+
+        </section>
+        <!-- Sección "Nuestra esencia / Quiénes Somos" -->
+        <section id="esencia" class="pt-xl lg:pt-[120px] bg-surface-container-lowest flex flex-col relative overflow-hidden">
+            
+            <div class="px-margin max-w-6xl mx-auto w-full mb-16 lg:mb-24 flex flex-col lg:flex-row gap-12 lg:gap-24 items-start relative z-20">
+                
+                <!-- Izquierda: Títulos -->
+                <div class="lg:w-5/12 flex flex-col gap-4 text-left">
+                    <p class="font-label-caps text-label-caps text-secondary uppercase tracking-widest relative inline-block">
+                        Categoría del Negocio · Localización
+                        <span class="absolute -bottom-2 left-0 w-12 h-1 bg-primary-container rounded-full"></span>
+                    </p>
+                    <h1 class="text-4xl lg:text-5xl xl:text-6xl font-headline-h1 text-on-surface mt-4 leading-tight">
+                        <span class="sr-only">Cafetería Nanay en Tamaraceite: </span>Quiénes<br><em class="text-primary italic">Somos</em>
+                    </h1>
+                </div>
+
+                <!-- Derecha: Textos -->
+                <div class="lg:w-7/12 flex flex-col gap-6 pt-2">
+                    <p class="font-body-lg text-xl lg:text-2xl text-on-surface leading-relaxed font-light">
+                        Aquí va una frase que defina la esencia del negocio. Una descripción que invite a entrar y disfrutar de la experiencia que se ofrece en este espacio.
+                    </p>
+                    <div class="h-px w-full bg-outline-variant/30 my-2"></div>
+                    <p class="font-body-md text-lg text-on-surface-variant leading-relaxed">
+                        Este es un espacio para contar la historia del proyecto. Puedes hablar de los orígenes, los valores que definen el trabajo diario y lo que hace que este lugar sea especial para los clientes.
+                    </p>
+                    <p class="font-body-md text-lg text-on-surface-variant leading-relaxed">
+                        Añade más detalles sobre la metodología, los materiales o la pasión que se pone en cada detalle para crear una atmósfera acogedora.
+                    </p>
+                </div>
+                
+            </div>
+
+            <!-- Imagen inferior (Cartel) con degradado suave para integrarse -->
+            <div class="w-full relative z-10">
+                <div class="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-surface-container-lowest to-transparent pointer-events-none"></div>
+                <img src="assets/images/cartel.png" class="w-full object-cover min-h-[400px]" alt="Cafetería Nanay - Cartel" loading="lazy">
+                <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-surface to-transparent pointer-events-none"></div>
+            </div>
+        </section>
+        <!-- Sección "Menú destacado" -->
+        <section id="menu" class="px-margin py-xl bg-primary-container/10">
+            <div class="max-w-7xl mx-auto flex flex-col gap-lg">
+                <div class="text-center mb-lg">
+                    <h2 class="font-headline-h2 text-headline-h2 text-primary">Nuestra Selección</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+                    <!-- Card 1 -->
+                    <article
+                        class="bg-surface-container-lowest rounded-xl p-md flex flex-col gap-md ambient-shadow hover:-translate-y-2 viscous-transition group cursor-pointer">
+                        <div class="h-64 rounded-lg overflow-hidden">
+                            <img alt="Preparación de café de especialidad"
+                                class="w-full h-full object-cover group-hover:scale-105 viscous-transition"
+                                loading="lazy" decoding="async"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgrqJjeTe7txgnp1zSNVGCd_AA4p-GQhygurotmdLNIPkeTgYnOJh-ikwLEWJ_f0FDAMm3ahLsSv2zeEdTXwSVRuQIgjOnoA3hMkXIdY9wsWcURQwkHyjwDXSkz4rHguLto6pUcZq81tP7yuwmnWngyOtbAhy0upHa2rOH5wc9Doh15ZBPOZg9Fi06nMP4WV-tMMJgRRnvjMEYWEMCmW4FVBG693pq4k2klIO_2pd3aX_Q4DvdbaTwTnHkJst5a3BkrFAoHjlDizZw" />
+                        </div>
+                        <div class="flex flex-col gap-xs">
+                            <h3 class="font-headline-h3 text-headline-h3 text-on-surface">Nombre del Producto</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Descripción breve
+                                del producto para atraer la atención del cliente.</p>
+                            <span class="font-label-caps text-label-caps text-secondary mt-sm bg-primary-container/20 px-3 py-1 rounded-full w-fit">$0.00</span>
+                        </div>
+                    </article>
+                    <!-- Card 2 -->
+                    <article
+                        class="bg-surface-container-lowest rounded-xl p-md flex flex-col gap-md ambient-shadow hover:-translate-y-2 viscous-transition group cursor-pointer mt-0 lg:mt-lg">
+                        <div class="h-64 rounded-lg overflow-hidden">
+                            <img alt="Matcha latte ceremonial en taza"
+                                class="w-full h-full object-cover group-hover:scale-105 viscous-transition"
+                                loading="lazy" decoding="async"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDliJmAtm55WwL_IQhU0xhD3GuNybqOdZqfnOTIzACt3OalZYutfMfYqEkO4YRUxpanWrMJHpn19NK__UZGHc4TmnvO01HPg1ci9h4nQGJZuDPEodI1luez6-5OC2cNveKJnwx7hksaMe5a7nFoHpbqU6iIDEGJ1nWNGMLfWcNr8VGgnjPPXT5rxNM3rzZS1N42NcDzbfTxhtn9Fi7UeKQ9NdMu-VaH5TgcbGBnGYwyfWWGddujc787LJW0whY6BMs_ZIeio8Tub8o-" />
+                        </div>
+                        <div class="flex flex-col gap-xs">
+                            <h3 class="font-headline-h3 text-headline-h3 text-on-surface">Nombre del Producto</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Descripción breve
+                                del producto para atraer la atención del cliente.</p>
+                            <span class="font-label-caps text-label-caps text-secondary mt-sm bg-primary-container/20 px-3 py-1 rounded-full w-fit">$0.00</span>
+                        </div>
+                    </article>
+                    <!-- Card 3 -->
+                    <article
+                        class="bg-surface-container-lowest rounded-xl p-md flex flex-col gap-md ambient-shadow hover:-translate-y-2 viscous-transition group cursor-pointer">
+                        <div class="h-64 rounded-lg overflow-hidden">
+                            <img alt="Croissants artesanales recién horneados"
+                                class="w-full h-full object-cover group-hover:scale-105 viscous-transition"
+                                loading="lazy" decoding="async"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBPysAw1GSTx6YUAdf_tYXYxXXEfODg6vRtJ3JbC4dEfDXQU8YmLI1OvBFTV7g9Hc_awjx6YSecPcsJ7NX8_FzxzD613SHGAlHT3nI-iUYJscWomnB1xbNLvcOXJmGRPx9iZsa5DptO6uYVmySp2Q-z4grcEbmNwrq_hlMOHs41iwntmlVURcrrEzDGV30BcNVrs9w8Axamv_7rYP9hYwON8g85RGS_qcJ5NBTD8Sv06XhJCSduHeyvnYeSHYx053CNydn12yNxMj4" />
+                        </div>
+                        <div class="flex flex-col gap-xs">
+                            <h3 class="font-headline-h3 text-headline-h3 text-on-surface">Nombre del Producto</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Descripción breve
+                                del producto para atraer la atención del cliente.</p>
+                            <span class="font-label-caps text-label-caps text-secondary mt-sm bg-primary-container/20 px-3 py-1 rounded-full w-fit">$0.00</span>
+                        </div>
+                    </article>
+                    <!-- Card 4 -->
+                    <article
+                        class="bg-surface-container-lowest rounded-xl p-md flex flex-col gap-md ambient-shadow hover:-translate-y-2 viscous-transition group cursor-pointer mt-0 lg:mt-lg">
+                        <div class="h-64 rounded-lg overflow-hidden">
+                            <img alt="Plato elegante de postre casero"
+                                class="w-full h-full object-cover group-hover:scale-105 viscous-transition"
+                                loading="lazy" decoding="async"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbBOtdS0M2I0YQipqRGaYjAfF2bUoDctkgK81s5MiYE4nMahzOEnm6br3DBkm4dfVxLO_plX-YIDBFh-cUanEu3y6WalyRqeSwoGzVuwvptJeoPcIZxNi7P773WQRR8OFwg8OCXanobJWOnN8YfiQnYQ6CjtUj4H7wFfKp6kblZRLCW_XwLF1y7sc1sBlGjf_RUih8e-35tjSYWkgay3Uzvcg4tlM4HFVaXZka0kYu6hOyb5hElMTKpEtaIH86EdNAybmdp5kffGrw" />
+                        </div>
+                        <div class="flex flex-col gap-xs">
+                            <h3 class="font-headline-h3 text-headline-h3 text-on-surface">Nombre del Producto</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Descripción breve
+                                del producto para atraer la atención del cliente.</p>
+                            <span class="font-label-caps text-label-caps text-secondary mt-sm bg-primary-container/20 px-3 py-1 rounded-full w-fit">$0.00</span>
+                        </div>
+                    </article>
+                </div>
+                <!-- Botón de Menú Completo -->
+                <div class="flex justify-center mt-xl">
+                    <a href="assets/docs/carta.pdf" target="_blank" rel="noopener noreferrer" class="btn-3d-menu inline-flex items-center justify-center text-center">
+                        Ver Carta
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto-social" class="relative px-margin bg-surface flex items-center pt-12 pb-24 lg:py-20"
+            style="overflow: clip; min-height: 800px;">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-[80px] items-center w-full">
+
+                <!-- Izquierda: imagen (relativa en movil, absoluta en desktop) -->
+                <div class="contact-image-wrapper relative lg:absolute left-0 lg:bottom-[50px] -mb-12 lg:-mb-0 z-0 order-2 lg:order-1 flex justify-center w-full lg:w-auto mt-4 lg:mt-0" id="contact-img-anim">
+                    <img src="assets/images/zumo.webp" alt="Bebida artesanal de Mares Café"
+                        class="h-[420px] lg:h-[700px] max-w-none w-auto object-contain drop-shadow-2xl" loading="lazy">
+                </div>
+
+                <!-- Derecha: Info y botones de contacto (en columna derecha del grid) -->
+                <div class="flex flex-col gap-lg lg:col-start-2 z-10 relative max-w-md mx-auto lg:ml-auto lg:mr-8 order-1 lg:order-2">
+                    <div class="flex flex-col gap-sm items-center lg:items-start text-center lg:text-left">
+                        <p class="font-label-caps text-label-caps text-primary uppercase tracking-widest">Contáctanos
+                        </p>
+                        <h2 class="font-headline-h2 text-4xl lg:text-5xl text-on-surface leading-tight">Título de<br>Contacto</h2>
+                        <p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+                            Texto de invitación para contactar. Puedes mencionar reservas, consultas generales o redes
+                            sociales.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col gap-md items-center lg:items-start">
+                        <!-- Teléfono -->
+                        <a href="tel:+34671272274" class="contact-btn contact-btn-phone" id="btn-phone"
+                            aria-label="Llamar por teléfono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.36 11.36 0 003.54.56 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.56 3.54 1 1 0 01-.23 1.1l-2.21 2.15z" />
+                            </svg>
+                            Llamar al 671 27 22 74
+                        </a>
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/34671272274" target="_blank" rel="noopener noreferrer" class="contact-btn contact-btn-whatsapp" style="background-color: #73ADB7; color: #ffffff; border-color: #73ADB7;" id="btn-whatsapp" aria-label="Abrir WhatsApp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                            WhatsApp
+                        </a>
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/nanay_cafeteria" target="_blank" rel="noopener noreferrer"
+                            class="contact-btn contact-btn-instagram" id="btn-instagram" aria-label="Visitar Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                            </svg>
+                            Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Horarios -->
+        <section id="horarios" class="px-margin py-xl bg-surface-container-lowest">
+            <div class="max-w-3xl mx-auto text-center flex flex-col items-center">
+                <p class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Planifica tu visita</p>
+                <h2 class="font-headline-h2 text-headline-h2 text-primary mt-sm mb-lg">Nuestros Horarios</h2>
+                
+                <div class="bg-surface rounded-2xl p-8 ambient-shadow max-w-xl w-full mx-auto flex flex-col gap-4">
+                    <div class="flex justify-between items-center pb-3 border-b border-outline-variant/30">
+                        <span class="font-semibold text-on-surface">Lunes</span>
+                        <span class="text-on-surface-variant">7:00 – 15:00</span>
+                    </div>
+                    <div class="flex justify-between items-center pb-3 border-b border-outline-variant/30">
+                        <span class="font-semibold text-on-surface">Martes a Viernes</span>
+                        <span class="text-on-surface-variant">7:00 – 20:00</span>
+                    </div>
+                    <div class="flex justify-between items-center pb-3 border-b border-outline-variant/30">
+                        <span class="font-semibold text-on-surface">Sábado</span>
+                        <span class="text-on-surface-variant">7:00 – 13:00</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="font-semibold text-on-surface">Domingo</span>
+                        <span class="text-on-surface-variant">8:00 – 13:00</span>
+                    </div>
+                </div>
+                <p class="text-xs text-on-surface-variant/70 mt-4 italic">El horario podría cambiar en días festivos</p>
+            </div>
+        </section>
+
+        <!-- Sección "Ven a visitarnos" (Mapa) -->
+        <section id="ubicacion" class="bg-surface">
+            <div class="px-margin py-xl lg:py-24 text-center">
+                <h2 class="font-headline-h2 text-headline-h2 text-primary">¿Dónde encontrarnos?</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant mt-sm">
+                    <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0xc409520d17c02ff:0x44bd6645edb84e8a?sa=X" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors underline decoration-secondary">
+                        C. Cruz del Ovejero, 30, 35018 Tamaraceite, Las Palmas
+                    </a>
+                </p>
+            </div>
+
+            <!-- Mapa ancho completo -->
+            <div class="w-full h-[350px]">
+                <iframe
+                    src="https://maps.google.com/maps?q=C.%20Cruz%20del%20Ovejero,%2030,%2035018%20Tamaraceite,%20Las%20Palmas&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <!-- Franja con logo y wave inferior -->
+            <div class="relative w-full py-20 flex justify-center items-center overflow-hidden">
+                <!-- Fondo de imagen -->
+                <img src="assets/images/poster.webp" class="absolute inset-0 w-full h-full object-cover z-0" alt="Fondo decorativo Cafetería Nanay Tamaraceite" loading="lazy" />
+
+                <!-- Logo -->
+                <img src="assets/images/logo.webp" alt="Cafetería Nanay" class="h-56 w-auto object-contain relative z-10"
+                    style="transform: translateY(-30px);">
+
+                <!-- Dibujo de conexión con el footer (Wave) -->
+                <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                        preserveAspectRatio="none" class="relative block w-full h-[50px] md:h-[80px]"
+                        style="fill: #F8F6ED;">
+                        <path
+                            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C52.16,112.16,109.83,119.5,166,115.8,218.66,112.33,269.83,86.63,321.39,56.44Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer id="contacto" class="full-width" style="background-color: #F8F6ED;">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center w-full px-margin py-xl gap-gutter max-w-7xl mx-auto">
+
+            <nav class="flex flex-wrap justify-center gap-md" aria-label="Enlaces de pie de página">
+                <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300"
+                    href="https://www.instagram.com/nanay_cafeteria" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300"
+                    href="#ubicacion">Ubicación</a>
+                <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300"
+                    href="#horarios">Horarios</a>
+                <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300"
+                    href="#contacto-social">Contacto</a>
+            </nav>
+            <div class="text-on-surface-variant/80">
+                © 2026 Cafetería Nanay. Todos los derechos reservados. — <span style="color: #3E210B;">Hecho por <a href="https://guillediaz6.github.io/portfolio" target="_blank" rel="noopener noreferrer" class="no-underline transition-colors font-semibold" style="color: #3E210B;">gdm.developer</a></span>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 bg-[#F8F6ED] z-[100] flex flex-col items-center justify-center gap-8 transition-transform duration-300 transform translate-x-full md:hidden">
+        <button id="close-menu-btn" class="absolute top-6 right-6 border-none bg-transparent cursor-pointer" aria-label="Cerrar menú">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary, #3E210B)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <a href="#esencia" class="mobile-nav-link text-3xl font-headline-h3 text-primary no-underline">Sobre Nosotros</a>
+        <a href="#menu" class="mobile-nav-link text-3xl font-headline-h3 text-primary no-underline">Menú</a>
+        <a href="#horarios" class="mobile-nav-link text-3xl font-headline-h3 text-primary no-underline">Horarios</a>
+        <a href="#ubicacion" class="mobile-nav-link text-3xl font-headline-h3 text-primary no-underline">Ubicación</a>
+        <a href="#contacto-social" class="mobile-nav-link text-3xl font-headline-h3 text-primary no-underline">Contacto</a>
+    </div>
+</body>
+
+<script src="js/main.js"></script>
+
+</html>
