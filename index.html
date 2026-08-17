@@ -318,34 +318,33 @@
         </section>
 
         <!-- Sección Horarios -->
-        <section id="horarios" class="relative px-margin py-xl lg:py-28 overflow-hidden">
-            <!-- Imagen de fondo con overlay -->
-            <img src="assets/images/horario.webp" alt="Fondo Horarios Cafetería Nanay" class="absolute inset-0 w-full h-full object-cover z-0" loading="lazy" />
-            <div class="absolute inset-0 bg-primary/40 backdrop-blur-xs z-0" aria-hidden="true"></div>
+        <section id="horarios" class="relative px-margin py-32 lg:py-48 overflow-hidden bg-fixed bg-center bg-cover" style="background-image: url('assets/images/horario.webp');">
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-primary/40 backdrop-blur-sm z-0" aria-hidden="true"></div>
 
-            <div class="max-w-3xl mx-auto text-center flex flex-col items-center relative z-10">
+            <div class="max-w-4xl mx-auto text-center flex flex-col items-center relative z-10">
                 <p class="font-label-caps text-label-caps text-primary-container uppercase tracking-widest font-semibold drop-shadow">Planifica tu visita</p>
                 <h2 class="font-headline-h2 text-headline-h2 text-on-primary mt-sm mb-lg drop-shadow-md">Nuestros Horarios</h2>
                 
-                <div class="bg-surface/95 backdrop-blur-md rounded-2xl p-8 ambient-shadow max-w-xl w-full mx-auto flex flex-col gap-4 border border-outline-variant/30">
+                <div class="bg-surface/95 backdrop-blur-md rounded-2xl p-8 lg:p-12 ambient-shadow max-w-2xl w-full mx-auto flex flex-col gap-5 border border-outline-variant/30">
                     <div class="flex justify-between items-center pb-3 border-b border-outline-variant/30">
-                        <span class="font-semibold text-on-surface">Lunes</span>
-                        <span class="text-on-surface-variant font-medium">7:00 – 15:00</span>
+                        <span class="font-semibold text-on-surface text-lg">Lunes</span>
+                        <span class="text-on-surface-variant font-medium text-lg">7:00 – 15:00</span>
                     </div>
                     <div class="flex justify-between items-center pb-3 border-b border-outline-variant/30">
-                        <span class="font-semibold text-on-surface">Martes a Viernes</span>
-                        <span class="text-on-surface-variant font-medium">7:00 – 20:00</span>
+                        <span class="font-semibold text-on-surface text-lg">Martes a Viernes</span>
+                        <span class="text-on-surface-variant font-medium text-lg">7:00 – 20:00</span>
                     </div>
                     <div class="flex justify-between items-center pb-3 border-b border-outline-variant/30">
-                        <span class="font-semibold text-on-surface">Sábado</span>
-                        <span class="text-on-surface-variant font-medium">7:00 – 13:00</span>
+                        <span class="font-semibold text-on-surface text-lg">Sábado</span>
+                        <span class="text-on-surface-variant font-medium text-lg">7:00 – 13:00</span>
                     </div>
                     <div class="flex justify-between items-center">
-                        <span class="font-semibold text-on-surface">Domingo</span>
-                        <span class="text-on-surface-variant font-medium">8:00 – 13:00</span>
+                        <span class="font-semibold text-on-surface text-lg">Domingo</span>
+                        <span class="text-on-surface-variant font-medium text-lg">8:00 – 13:00</span>
                     </div>
                 </div>
-                <p class="text-xs text-on-primary/90 mt-4 italic drop-shadow">El horario podría cambiar en días festivos</p>
+                <p class="text-sm text-on-primary/90 mt-6 italic drop-shadow">El horario podría cambiar en días festivos</p>
             </div>
         </section>
 
