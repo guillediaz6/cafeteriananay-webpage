@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description"
+        content="Nuestra Carta - Cafetería Nanay en Tamaraceite, Las Palmas. Descubre nuestro menú." />
+    <title>Nuestra Carta | Cafetería Nanay</title>
+
+    <link rel="preconnect" href="https://lh3.googleusercontent.com" crossorigin />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#3E210B",
+                        "on-primary": "#F8F6ED",
+                        "primary-container": "#F2C98D",
+                        "on-primary-container": "#3E210B",
+                        "secondary": "#73ADB7",
+                        "on-secondary": "#ffffff",
+                        "surface": "#F8F6ED",
+                        "background": "#F8F6ED",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#e8e5d8",
+                        "on-surface": "#303513",
+                        "on-surface-variant": "#4a521e",
+                        "outline": "#73ADB7",
+                        "outline-variant": "#c9c5b5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "5rem",
+                        "margin": "max(5vw, 40px)",
+                        "md": "1.5rem",
+                        "base": "8px",
+                        "sm": "1rem",
+                        "gutter": "24px",
+                        "lg": "3rem",
+                        "xs": "0.5rem"
+                    },
+                    "fontFamily": {
+                        "headline-h2": ["Playfair Display", "serif"],
+                        "body-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "display": ["Playfair Display", "serif"],
+                        "label-caps": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-h3": ["Playfair Display", "serif"],
+                        "headline-h1": ["Playfair Display", "serif"],
+                        "body-lg": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+    <!-- Header (sólido siempre en esta página) -->
+    <header id="site-header" class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md border-b border-primary/10 shadow-sm transition-all duration-500">
+        <div class="flex justify-between items-center w-full px-margin py-sm max-w-7xl mx-auto">
+            <div class="flex items-center w-[100px] md:w-[150px]">
+                <a href="index.html">
+                    <img src="assets/images/logo.webp" alt="Logo de Cafetería Nanay en Tamaraceite" class="w-full h-auto drop-shadow-sm" loading="lazy">
+                </a>
+            </div>
+            <nav class="hidden md:flex items-center gap-gutter" aria-label="Navegación principal">
+                <a class="nav-link font-body-md transition-colors duration-500 hover:opacity-100 text-on-surface-variant hover:text-primary" href="index.html#esencia">Sobre Nosotros</a>
+                <a class="nav-link font-body-md transition-colors duration-500 hover:opacity-100 text-on-surface-variant hover:text-primary" href="index.html#menu">Menú Principal</a>
+                <a class="nav-link font-body-md transition-colors duration-500 hover:opacity-100 text-on-surface-variant hover:text-primary" href="index.html#contacto-social">Contacto</a>
+            </nav>
+            <a href="index.html#ubicacion"
+                class="cta-btn px-lg py-sm rounded-full font-label-caps text-label-caps uppercase tracking-widest transition-all duration-300 inline-flex items-center justify-center bg-primary-container text-on-surface border-none hidden md:inline-flex">
+                Visítanos
+            </a>
+            <!-- Mobile Menu Btn (Volver a inicio) -->
+            <button class="md:hidden flex flex-col justify-center items-end w-10 h-10 border-none bg-transparent cursor-pointer" aria-label="Volver a Inicio" onclick="window.location.href='index.html'">
+                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary, #3E210B)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                 </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="pt-24 lg:pt-32">
+        <!-- Sección Carta Completa -->
+        <section id="carta-completa" class="px-margin py-xl bg-surface">
+            <div class="max-w-7xl mx-auto flex flex-col gap-16">
+                
+                <div class="text-center relative">
+                    <!-- Boton de atras -->
+                    <a href="index.html" class="absolute left-0 top-1/2 -translate-y-1/2 text-primary hover:text-secondary transition-colors hidden lg:flex items-center gap-2 font-label-caps tracking-widest uppercase">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 12H5M12 19l-7-7 7-7"/>
+                        </svg>
+                        Volver
+                    </a>
+                    <h1 class="font-headline-h2 text-5xl lg:text-6xl text-primary mb-4">Nuestra Carta</h1>
+                    <div class="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+                </div>
+
+                <div class="columns-1 lg:columns-2 gap-16 lg:gap-24 space-y-16 mt-8">
+                    
+                    <!-- CAFÉS E INFUSIONES -->
+                    <div class="break-inside-avoid">
+                        <h3 class="font-headline-h3 text-3xl text-primary border-b border-outline-variant/40 pb-4 mb-8">Cafés e Infusiones</h3>
+                        <div class="flex flex-col gap-5">
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2"><span class="font-body-lg text-lg text-on-surface">Café</span><span class="font-headline-h3 text-lg text-primary">1.20€</span></div>
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2"><span class="font-body-lg text-lg text-on-surface">Café americano</span><span class="font-headline-h3 text-lg text-primary">1.50€</span></div>
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2"><span class="font-body-lg text-lg text-on-surface">Cortado</span><span class="font-headline-h3 text-lg text-primary">1.30€</span></div>
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2"><span class="font-body-lg text-lg text-on-surface">Cortado condensada</span><span class="font-headline-h3 text-lg text-primary">1.50€</span></div>
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2"><span class="font-body-lg text-lg text-on-surface">Cortado Leche Leche</span><span class="font-headline-h3 text-lg text-primary">1.80€</span></div>
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2"><span class="font-body-lg text-lg text-on-surface">Café con leche</span><span class="font-headline-h3 text-lg text-primary">2.00€</span></div>
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2"><span class="font-body-lg text-lg text-on-surface">Capuccino</span><span class="font-headline-h3 text-lg text-primary">2.70€</span></div>
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2"><span class="font-body-lg text-lg text-on-surface">Cafáce</span><span class="font-headline-h3 text-lg text-primary">1.80€</span></div>
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2"><span class="font-body-lg text-lg text-on-surface">Chocolates</span><span class="font-headline-h3 text-lg text-primary">2.50€</span></div>
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2"><span class="font-body-lg text-lg text-on-surface">Batidos</span><span class="font-headline-h3 text-lg text-primary">2.50€</span></div>
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2"><span class="font-body-lg text-lg text-on-surface">Infusiones</span><span class="font-headline-h3 text-lg text-primary">1.60€</span></div>
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2"><span class="font-body-lg text-lg text-on-surface">Té helados</span><span class="font-headline-h3 text-lg text-primary">2.50€</span></div>
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2"><span class="font-body-lg text-lg text-on-surface">Matcha</span><span class="font-headline-h3 text-lg text-primary">2.10€</span></div>
+                        </div>
+                    </div>
+
+                    <!-- TOSTADAS -->
+                    <div class="break-inside-avoid">
+                        <h3 class="font-headline-h3 text-3xl text-primary border-b border-outline-variant/40 pb-4 mb-8">Tostadas</h3>
+                        <div class="flex flex-col gap-6">
+                            <div>
+                                <div class="flex justify-between items-end border-b border-outline-variant/20 pb-1"><span class="font-body-lg text-lg text-on-surface">Mantequilla mermelada</span><span class="font-headline-h3 text-lg text-primary">2.50€</span></div>
+                                <p class="text-sm italic text-on-surface-variant mt-1">Lacteos, gluten</p>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end border-b border-outline-variant/20 pb-1"><span class="font-body-lg text-lg text-on-surface">Queso gratinado</span><span class="font-headline-h3 text-lg text-primary">3.50€</span></div>
+                                <p class="text-sm italic text-on-surface-variant mt-1">Lacteos, gluten</p>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end border-b border-outline-variant/20 pb-1"><span class="font-body-lg text-lg text-on-surface">Perico (Mixto + Tierno)</span><span class="font-headline-h3 text-lg text-primary">3.50€</span></div>
+                                <p class="text-sm italic text-on-surface-variant mt-1">Lacteos, gluten</p>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end border-b border-outline-variant/20 pb-1"><span class="font-body-lg text-lg text-on-surface">Huevo revuelto</span><span class="font-headline-h3 text-lg text-primary">3.00€</span></div>
+                                <p class="text-sm italic text-on-surface-variant mt-1">Huevo, gluten</p>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end border-b border-outline-variant/20 pb-1"><span class="font-body-lg text-lg text-on-surface">Huevo benedict + jamón o salmón</span><span class="font-headline-h3 text-lg text-primary">4.00€</span></div>
+                                <p class="text-sm italic text-on-surface-variant mt-1">Huevo, gluten</p>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end border-b border-outline-variant/20 pb-1"><span class="font-body-lg text-lg text-on-surface">Cottage, aguacate, jamón o salmón</span><span class="font-headline-h3 text-lg text-primary">4.00€</span></div>
+                                <p class="text-sm italic text-on-surface-variant mt-1">Lacteos, gluten</p>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end border-b border-outline-variant/20 pb-1"><span class="font-body-lg text-lg text-on-surface">Pantoja (Pan, Tomate, jamón)</span><span class="font-headline-h3 text-lg text-primary">3.50€</span></div>
+                                <p class="text-sm italic text-on-surface-variant mt-1">Gluten</p>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end border-b border-outline-variant/20 pb-1"><span class="font-body-lg text-lg text-on-surface">Pollo (Queso, mix lechugas)</span><span class="font-headline-h3 text-lg text-primary">4.00€</span></div>
+                                <p class="text-sm italic text-on-surface-variant mt-1">Lacteos, gluten</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SANDWICH O FOCACCIA O CROISSANT -->
+                    <div class="break-inside-avoid">
+                        <h3 class="font-headline-h3 text-3xl text-primary border-b border-outline-variant/40 pb-4 mb-8">Sándwich, Focaccia o Croissant</h3>
+                        <div class="flex flex-col gap-6">
+                            <div>
+                                <div class="flex justify-between items-end border-b border-outline-variant/20 pb-1"><span class="font-body-lg text-lg text-on-surface">Mixto XL</span><span class="font-headline-h3 text-lg text-primary">4.00€</span></div>
+                                <p class="text-sm italic text-on-surface-variant mt-1">Lacteos y gluten</p>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end border-b border-outline-variant/20 pb-1"><span class="font-body-lg text-lg text-on-surface">Vegetal atún o pollo</span><span class="font-headline-h3 text-lg text-primary">4.00€</span></div>
+                                <p class="text-sm italic text-on-surface-variant mt-1">Huevo, gluten</p>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end border-b border-outline-variant/20 pb-1"><span class="font-body-lg text-lg text-on-surface">Pollo bacon queso</span><span class="font-headline-h3 text-lg text-primary">4.00€</span></div>
+                                <p class="text-sm italic text-on-surface-variant mt-1">Lacteos, gluten</p>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end border-b border-outline-variant/20 pb-1"><span class="font-body-lg text-lg text-on-surface">Club Calabacín y Queso</span><span class="font-headline-h3 text-lg text-primary">4.00€</span></div>
+                                <p class="text-sm italic text-on-surface-variant mt-1">Lacteos, gluten</p>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end border-b border-outline-variant/20 pb-1"><span class="font-body-lg text-lg text-on-surface">Tortilla</span><span class="font-headline-h3 text-lg text-primary">4.00€</span></div>
+                                <p class="text-sm italic text-on-surface-variant mt-1">Huevo, gluten</p>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end border-b border-outline-variant/20 pb-1"><span class="font-body-lg text-lg text-on-surface">Mortadela Queso pesto</span><span class="font-headline-h3 text-lg text-primary">4.00€</span></div>
+                                <p class="text-sm italic text-on-surface-variant mt-1">Lacteos, frutos secos, gluten</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BOCADILLOS -->
+                    <div class="break-inside-avoid">
+                        <h3 class="font-headline-h3 text-3xl text-primary border-b border-outline-variant/40 pb-4 mb-8">Bocadillos</h3>
+                        <div class="flex flex-col gap-5">
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2"><span class="font-body-lg text-lg text-on-surface">Lomo</span><span class="font-headline-h3 text-lg text-primary">4.20€</span></div>
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2"><span class="font-body-lg text-lg text-on-surface">Vuelta</span><span class="font-headline-h3 text-lg text-primary">4.20€</span></div>
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2"><span class="font-body-lg text-lg text-on-surface">Pechuga</span><span class="font-headline-h3 text-lg text-primary">4.20€</span></div>
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2"><span class="font-body-lg text-lg text-on-surface">Jamón</span><span class="font-headline-h3 text-lg text-primary">4.20€</span></div>
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2"><span class="font-body-lg text-lg text-on-surface">Mortadela</span><span class="font-headline-h3 text-lg text-primary">4.20€</span></div>
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2"><span class="font-body-lg text-lg text-on-surface">Salmón</span><span class="font-headline-h3 text-lg text-primary">4.20€</span></div>
+                            
+                            <div class="bg-primary-container/20 p-5 rounded-xl mt-4">
+                                <p class="font-headline-h3 text-xl text-primary mb-3">Suplementos</p>
+                                <ul class="font-body-md text-on-surface-variant text-base flex flex-col gap-2">
+                                    <li class="flex justify-between"><span>Empanado</span><span>+1.00€</span></li>
+                                    <li class="flex justify-between"><span>Queso</span><span>+0.50€</span></li>
+                                    <li class="flex justify-between"><span>Especial</span><span>+1.50€</span></li>
+                                </ul>
+                            </div>
+                            <p class="text-sm italic text-on-surface-variant text-center bg-surface-container-highest py-3 rounded-lg mt-2">Nota: Medio bocadillo a la mitad de precio</p>
+                        </div>
+                    </div>
+
+                    <!-- ENSALADAS -->
+                    <div class="break-inside-avoid">
+                        <h3 class="font-headline-h3 text-3xl text-primary border-b border-outline-variant/40 pb-4 mb-8">Ensaladas</h3>
+                        <div class="flex flex-col gap-6">
+                            <div>
+                                <div class="flex justify-between items-end border-b border-outline-variant/20 pb-1"><span class="font-body-lg text-lg text-on-surface">Ensaladilla (huevo)</span><span class="font-headline-h3 text-lg text-primary">6.00€</span></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end border-b border-outline-variant/20 pb-1"><span class="font-body-lg text-lg text-on-surface">César</span><span class="font-headline-h3 text-lg text-primary">8.00€</span></div>
+                                <p class="text-sm italic text-on-surface-variant mt-1">Gluten, pescado, huevo, lacteos</p>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end border-b border-outline-variant/20 pb-1"><span class="font-body-lg text-lg text-on-surface">Tomate aguacate y queso</span><span class="font-headline-h3 text-lg text-primary">8.00€</span></div>
+                                <p class="text-sm italic text-on-surface-variant mt-1">Lacteos, frutos secos, gluten</p>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end border-b border-outline-variant/20 pb-1"><span class="font-body-lg text-lg text-on-surface">Capresse</span><span class="font-headline-h3 text-lg text-primary">8.00€</span></div>
+                                <p class="text-sm italic text-on-surface-variant mt-1">Lacteos, frutos secos</p>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end border-b border-outline-variant/20 pb-1"><span class="font-body-lg text-lg text-on-surface">Pollo bacon manzana nueces</span><span class="font-headline-h3 text-lg text-primary">8.00€</span></div>
+                                <p class="text-sm italic text-on-surface-variant mt-1">Frutos secos, gluten, lacteos</p>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end border-b border-outline-variant/20 pb-1"><span class="font-body-lg text-lg text-on-surface">Nanay De calafor</span><span class="font-headline-h3 text-lg text-primary">10.00€</span></div>
+                                <p class="text-sm text-on-surface-variant mt-1">De la huerta: Pesto, Verduras asadas</p>
+                                <p class="text-sm italic text-on-surface-variant mt-1">Gluten, pescado, lacteos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PARA COMER -->
+                    <div class="break-inside-avoid">
+                        <h3 class="font-headline-h3 text-3xl text-primary border-b border-outline-variant/40 pb-4 mb-8">Para Comer</h3>
+                        <div class="flex flex-col gap-6">
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+                                <span class="font-body-lg text-lg text-on-surface w-3/4">Verduras a la plancha</span>
+                                <span class="font-headline-h3 text-lg text-primary text-right">9.00€</span>
+                            </div>
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+                                <span class="font-body-lg text-lg text-on-surface w-3/4">Pasta del día</span>
+                                <span class="font-headline-h3 text-lg text-primary text-right">9.00€</span>
+                            </div>
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+                                <span class="font-body-lg text-lg text-on-surface w-3/4">Salteado de verduras con proteína a elegir (Pollo, ternera, langostino)</span>
+                                <span class="font-headline-h3 text-lg text-primary text-right">9.00€</span>
+                            </div>
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+                                <span class="font-body-lg text-lg text-on-surface w-3/4">Combo de pollo papas, ens. huevo</span>
+                                <span class="font-headline-h3 text-lg text-primary text-right">9.00€</span>
+                            </div>
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+                                <span class="font-body-lg text-lg text-on-surface w-3/4">Comb. de Ternera papas, ens. huevo</span>
+                                <span class="font-headline-h3 text-lg text-primary text-right">9.00€</span>
+                            </div>
+                            <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+                                <span class="font-body-lg text-lg text-on-surface w-3/4">Comb. de Carne papas, ens. huevo</span>
+                                <span class="font-headline-h3 text-lg text-primary text-right">9.00€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="text-center mt-12 flex flex-col items-center justify-center">
+                    <p class="font-headline-h2 text-4xl text-primary mb-8 italic">Disfruta. ♡</p>
+                    <a href="assets/docs/carta.pdf" target="_blank" rel="noopener noreferrer" class="btn-3d-menu inline-flex items-center justify-center text-center px-12 py-4">
+                        Descargar Carta en PDF
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contacto" class="full-width" style="background-color: #F8F6ED;">
+        <div class="flex flex-col md:flex-row justify-between items-center w-full px-margin py-xl gap-gutter max-w-7xl mx-auto border-t border-outline-variant/20 mt-8">
+            <nav class="flex flex-wrap justify-center gap-md" aria-label="Enlaces de pie de página">
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="https://www.instagram.com/nanay_cafeteria" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="index.html#ubicacion">Ubicación</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="index.html#horarios">Horarios</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="index.html#contacto-social">Contacto</a>
+            </nav>
+            <div class="text-on-surface-variant/80 text-center md:text-right mt-4 md:mt-0">
+                © 2026 Cafetería Nanay. Todos los derechos reservados. — <span style="color: #3E210B;">Hecho por <a href="https://guillediaz6.github.io/portfolio" target="_blank" rel="noopener noreferrer" class="no-underline transition-colors font-semibold" style="color: #3E210B;">gdm.developer</a></span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
