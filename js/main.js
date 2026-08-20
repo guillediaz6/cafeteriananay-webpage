@@ -55,3 +55,76 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// Cookie Banner Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const cookieBanner = document.getElementById('cookie-banner');
+    const btnAccept = document.getElementById('btn-accept-cookies');
+    const btnReject = document.getElementById('btn-reject-cookies');
+    const mapIframe = document.getElementById('google-map-iframe');
+    const mapPlaceholder = document.getElementById('map-placeholder');
+    const btnAcceptMap = document.getElementById('btn-accept-map-cookies');
+    
+    const COOKIE_NAME = 'nanay_cookie_consent';
+
+    function checkCookieConsent() {
+        return localStorage.getItem(COOKIE_NAME);
+    }
+
+    function setCookieConsent(value) {
+        localStorage.setItem(COOKIE_NAME, value);
+        hideBanner();
+        if (value === 'accepted') {
+            loadMap();
+        }
+    }
+
+    function hideBanner() {
+        if (cookieBanner) {
+            cookieBanner.classList.add('translate-y-full');
+            setTimeout(() => {
+                cookieBanner.classList.add('hidden');
+            }, 500);
+        }
+    }
+
+    function showBanner() {
+        if (cookieBanner) {
+            cookieBanner.classList.remove('hidden');
+            setTimeout(() => {
+                cookieBanner.classList.remove('translate-y-full');
+            }, 50);
+        }
+    }
+
+    function loadMap() {
+        if (mapIframe && mapIframe.dataset.src) {
+            mapIframe.src = mapIframe.dataset.src;
+            mapIframe.style.opacity = '1';
+            if (mapPlaceholder) {
+                mapPlaceholder.style.display = 'none';
+            }
+        }
+    }
+
+    const consent = checkCookieConsent();
+    if (!consent) {
+        showBanner();
+    } else if (consent === 'accepted') {
+        loadMap();
+    }
+
+    if (btnAccept) {
+        btnAccept.addEventListener('click', () => setCookieConsent('accepted'));
+    }
+    
+    if (btnReject) {
+        btnReject.addEventListener('click', () => setCookieConsent('rejected'));
+    }
+
+    if (btnAcceptMap) {
+        btnAcceptMap.addEventListener('click', () => {
+            setCookieConsent('accepted');
+        });
+    }
+});

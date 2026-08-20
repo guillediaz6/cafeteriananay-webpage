@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description"
+        content="Aviso Legal - Cafetería Nanay en Tamaraceite, Las Palmas." />
+    <title>Aviso Legal | Cafetería Nanay</title>
+
+    <link rel="preconnect" href="https://lh3.googleusercontent.com" crossorigin />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#3E210B",
+                        "on-primary": "#F8F6ED",
+                        "primary-container": "#F2C98D",
+                        "on-primary-container": "#3E210B",
+                        "secondary": "#73ADB7",
+                        "on-secondary": "#ffffff",
+                        "surface": "#F8F6ED",
+                        "background": "#F8F6ED",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#e8e5d8",
+                        "on-surface": "#303513",
+                        "on-surface-variant": "#4a521e",
+                        "outline": "#73ADB7",
+                        "outline-variant": "#c9c5b5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "5rem",
+                        "margin": "max(5vw, 40px)",
+                        "md": "1.5rem",
+                        "base": "8px",
+                        "sm": "1rem",
+                        "gutter": "24px",
+                        "lg": "3rem",
+                        "xs": "0.5rem"
+                    },
+                    "fontFamily": {
+                        "headline-h2": ["Playfair Display", "serif"],
+                        "body-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "display": ["Playfair Display", "serif"],
+                        "label-caps": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-h3": ["Playfair Display", "serif"],
+                        "headline-h1": ["Playfair Display", "serif"],
+                        "body-lg": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+    <!-- Header -->
+    <header id="site-header" class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md border-b border-primary shadow-sm transition-all duration-500">
+        <div class="flex justify-between items-center w-full px-margin py-sm max-w-7xl mx-auto">
+            <div class="flex items-center w-[100px] md:w-[150px]">
+                <a href="index.html">
+                    <img src="assets/images/logo.webp" alt="Logo de Cafetería Nanay en Tamaraceite" class="w-full h-auto drop-shadow-sm" loading="lazy">
+                </a>
+            </div>
+            <nav class="hidden md:flex items-center gap-gutter" aria-label="Navegación principal">
+                <a class="nav-link font-body-md transition-colors duration-500 hover:opacity-100 text-on-surface-variant hover:text-primary" href="index.html#esencia">Sobre Nosotros</a>
+                <a class="nav-link font-body-md transition-colors duration-500 hover:opacity-100 text-on-surface-variant hover:text-primary" href="index.html#menu">Menú Principal</a>
+                <a class="nav-link font-body-md transition-colors duration-500 hover:opacity-100 text-on-surface-variant hover:text-primary" href="index.html#contacto-social">Contacto</a>
+            </nav>
+            <a href="index.html#ubicacion"
+                class="cta-btn px-lg py-sm rounded-full font-label-caps text-label-caps uppercase tracking-widest transition-all duration-300 inline-flex items-center justify-center bg-primary-container text-on-surface border-none hidden md:inline-flex">
+                Visítanos
+            </a>
+            <!-- Mobile Menu Btn -->
+            <button class="md:hidden flex flex-col justify-center items-end w-10 h-10 border-none bg-transparent cursor-pointer" aria-label="Volver a Inicio" onclick="window.location.href='index.html'">
+                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary, #3E210B)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                 </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="pt-32 lg:pt-40 px-margin py-xl max-w-4xl mx-auto">
+        <div class="mb-10 text-center">
+            <h1 class="font-headline-h1 text-4xl lg:text-5xl text-primary mb-4">Aviso Legal</h1>
+        </div>
+        
+        <div class="prose prose-stone prose-lg mx-auto text-on-surface-variant bg-surface-container-highest p-8 md:p-12 rounded-3xl border border-outline-variant/30">
+            <h2 class="font-headline-h2 text-primary mt-8 mb-4 text-2xl">1. Datos Identificativos</h2>
+            <p class="mb-6 leading-relaxed">
+                El presente aviso legal regula el uso del sitio web <strong>cafeteriananay.com</strong>.<br>
+                Nombre Comercial: <strong>Cafetería Nanay</strong><br>
+                Dirección: <strong>C. Cruz del Ovejero, 30, 35018 Tamaraceite, Las Palmas</strong><br>
+                Email de contacto: <strong></strong>
+            </p>
+
+            <h2 class="font-headline-h2 text-primary mt-8 mb-4 text-2xl">2. Usuarios</h2>
+            <p class="mb-6 leading-relaxed">
+                El acceso y/o uso de este portal atribuye la condición de USUARIO, que acepta, desde dicho acceso y/o uso, las Condiciones Generales de Uso aquí reflejadas.
+            </p>
+
+            <h2 class="font-headline-h2 text-primary mt-8 mb-4 text-2xl">3. Uso del Portal</h2>
+            <p class="mb-6 leading-relaxed">
+                El presente sitio web proporciona el acceso a información (en adelante, "los contenidos") en Internet perteneciente a Cafetería Nanay. El USUARIO asume la responsabilidad del uso del portal. El sitio web tiene un carácter meramente informativo sobre los productos, servicios y ubicación de la cafetería.
+            </p>
+
+            <h2 class="font-headline-h2 text-primary mt-8 mb-4 text-2xl">4. Propiedad Intelectual e Industrial</h2>
+            <p class="mb-6 leading-relaxed">
+                Cafetería Nanay por sí o como cesionaria, es titular de todos los derechos de propiedad intelectual e industrial de su página web, así como de los elementos contenidos en la misma (a título enunciativo, imágenes, sonido, audio, vídeo, software o textos; marcas o logotipos, combinaciones de colores, estructura y diseño, etc.). Todos los derechos reservados.
+            </p>
+
+            <h2 class="font-headline-h2 text-primary mt-8 mb-4 text-2xl">5. Modificaciones</h2>
+            <p class="mb-6 leading-relaxed">
+                Cafetería Nanay se reserva el derecho de efectuar sin previo aviso las modificaciones que considere oportunas en su portal, pudiendo cambiar, suprimir o añadir tanto los contenidos y servicios que se presten a través de la misma como la forma en la que éstos aparezcan presentados o localizados en su portal.
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contacto" class="full-width border-t border-primary" style="background-color: #F8F6ED;">
+        <div class="flex flex-col md:flex-row justify-between items-center w-full px-margin py-xl gap-gutter max-w-7xl mx-auto">
+            <nav class="flex flex-wrap justify-center gap-md" aria-label="Enlaces de pie de página">
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="https://www.instagram.com/nanay_cafeteria" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="index.html#ubicacion">Ubicación</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="index.html#horarios">Horarios</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="index.html#contacto-social">Contacto</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 text-sm opacity-80" href="aviso-legal.html">Aviso Legal</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 text-sm opacity-80" href="privacidad.html">Política de Privacidad</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 text-sm opacity-80" href="cookies.html">Política de Cookies</a>
+            </nav>
+            <div class="text-on-surface-variant/80 mt-6 md:mt-0 text-center md:text-right">
+                © 2026 Cafetería Nanay. Todos los derechos reservados.<br><span style="color: #3E210B;">Hecho por <a href="https://guillediaz6.github.io/portfolio" target="_blank" rel="noopener noreferrer" class="no-underline transition-colors font-semibold" style="color: #3E210B;">gdm.developer</a></span>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
